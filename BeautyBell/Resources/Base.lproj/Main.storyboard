@@ -99,6 +99,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="G9B-tm-qRA" userLabel="Activity Indicator">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9jo-5a-PyL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -109,13 +112,16 @@
                             <constraint firstItem="9jo-5a-PyL" firstAttribute="trailing" secondItem="mfi-Rh-KRe" secondAttribute="trailing" constant="20" id="EH0-0M-5oS"/>
                             <constraint firstItem="yJV-aw-GYg" firstAttribute="top" secondItem="9jo-5a-PyL" secondAttribute="top" constant="16" id="FVQ-hh-rh7"/>
                             <constraint firstItem="D3N-XV-9Iq" firstAttribute="top" secondItem="yJV-aw-GYg" secondAttribute="bottom" constant="24" id="S8f-tn-hrO"/>
+                            <constraint firstItem="G9B-tm-qRA" firstAttribute="centerY" secondItem="DgM-XV-mJh" secondAttribute="centerY" id="V9w-6W-j7k"/>
                             <constraint firstItem="9jo-5a-PyL" firstAttribute="bottom" secondItem="mfi-Rh-KRe" secondAttribute="bottom" constant="8" id="bug-4S-7Vn"/>
                             <constraint firstItem="mfi-Rh-KRe" firstAttribute="top" secondItem="D3N-XV-9Iq" secondAttribute="bottom" constant="8" id="cOU-gz-EaK"/>
+                            <constraint firstItem="G9B-tm-qRA" firstAttribute="centerX" secondItem="DgM-XV-mJh" secondAttribute="centerX" id="qG2-Jc-EH0"/>
                             <constraint firstItem="mfi-Rh-KRe" firstAttribute="leading" secondItem="9jo-5a-PyL" secondAttribute="leading" constant="20" id="yuP-ZH-uSJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="t8x-ag-o7S"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="G9B-tm-qRA" id="Apn-w0-ST5"/>
                         <outlet property="searchTextField" destination="yJV-aw-GYg" id="thB-uo-9MO"/>
                         <outlet property="tableView" destination="mfi-Rh-KRe" id="287-OG-Q0H"/>
                     </connections>
@@ -176,6 +182,9 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="3Qb-7o-dev">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3mC-n8-baW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -185,8 +194,10 @@
                             <constraint firstItem="5Jr-Uf-TAe" firstAttribute="top" secondItem="Hbq-eq-qxs" secondAttribute="bottom" constant="16" id="AxO-sC-Q7d"/>
                             <constraint firstItem="3mC-n8-baW" firstAttribute="trailing" secondItem="bwN-kE-Py5" secondAttribute="trailing" constant="20" id="I9s-vi-Xts"/>
                             <constraint firstItem="Hbq-eq-qxs" firstAttribute="leading" secondItem="UR6-Ja-ppK" secondAttribute="leading" id="PRt-bQ-n4Y"/>
+                            <constraint firstItem="3Qb-7o-dev" firstAttribute="centerY" secondItem="cZ6-LO-apY" secondAttribute="centerY" id="Px1-cE-xgC"/>
                             <constraint firstItem="bwN-kE-Py5" firstAttribute="leading" secondItem="UR6-Ja-ppK" secondAttribute="trailing" constant="8" id="VyX-b0-RFx"/>
                             <constraint firstItem="bwN-kE-Py5" firstAttribute="top" secondItem="3mC-n8-baW" secondAttribute="top" constant="24" id="W98-mg-dnX"/>
+                            <constraint firstItem="3Qb-7o-dev" firstAttribute="centerX" secondItem="cZ6-LO-apY" secondAttribute="centerX" id="fMf-j8-6bM"/>
                             <constraint firstItem="5Jr-Uf-TAe" firstAttribute="centerX" secondItem="UR6-Ja-ppK" secondAttribute="leading" id="gSK-71-HdV"/>
                             <constraint firstItem="UR6-Ja-ppK" firstAttribute="leading" secondItem="3mC-n8-baW" secondAttribute="leading" constant="20" id="mgx-7X-Cgb"/>
                             <constraint firstItem="UR6-Ja-ppK" firstAttribute="top" secondItem="3mC-n8-baW" secondAttribute="top" constant="24" id="tCg-if-Srk"/>
@@ -194,6 +205,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="xJw-1F-VT7"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="3Qb-7o-dev" id="8AG-b8-ZTf"/>
                         <outlet property="artisanImageView" destination="UR6-Ja-ppK" id="dFo-Ra-MMA"/>
                         <outlet property="nameLabel" destination="IBe-QZ-XCN" id="ICj-ZR-nto"/>
                         <outlet property="serviceCollectionView" destination="5Jr-Uf-TAe" id="zuJ-Qq-Aaw"/>
@@ -283,19 +295,25 @@
                                     <constraint firstAttribute="height" constant="128" id="TT8-M7-7qd"/>
                                 </constraints>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="hyF-9V-s0S" userLabel="Activity Indicator">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eLm-2p-7Il"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zp2-pP-5Yp" firstAttribute="top" secondItem="eLm-2p-7Il" secondAttribute="top" constant="16" id="4uf-4e-lgf"/>
+                            <constraint firstItem="hyF-9V-s0S" firstAttribute="centerX" secondItem="9Dh-wQ-v9V" secondAttribute="centerX" id="6NM-NU-eaJ"/>
                             <constraint firstItem="yWO-3f-3IC" firstAttribute="leading" secondItem="zp2-pP-5Yp" secondAttribute="trailing" constant="27" id="I4L-lu-fK9"/>
                             <constraint firstItem="zp2-pP-5Yp" firstAttribute="leading" secondItem="eLm-2p-7Il" secondAttribute="leading" constant="20" id="Kf4-RY-idg"/>
+                            <constraint firstItem="hyF-9V-s0S" firstAttribute="centerY" secondItem="9Dh-wQ-v9V" secondAttribute="centerY" id="U8B-b1-H6T"/>
                             <constraint firstItem="eLm-2p-7Il" firstAttribute="trailing" secondItem="yWO-3f-3IC" secondAttribute="trailing" constant="20" id="hdy-Wv-Mr7"/>
                             <constraint firstItem="yWO-3f-3IC" firstAttribute="top" secondItem="zp2-pP-5Yp" secondAttribute="top" id="neF-me-av9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Z5-cs-gfH"/>
                     <connections>
+                        <outlet property="actvityIndicator" destination="hyF-9V-s0S" id="kRi-bQ-88Y"/>
                         <outlet property="birthLabel" destination="RlT-gX-WzF" id="68m-ZX-hPk"/>
                         <outlet property="emailLabel" destination="3m5-Br-Bbk" id="Ho1-gz-vjM"/>
                         <outlet property="imageProfile" destination="zp2-pP-5Yp" id="WyJ-TM-QoM"/>

@@ -13,6 +13,7 @@ class DetailArtisanViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var starStackView: UIStackView!
     @IBOutlet weak var serviceCollectionView: UICollectionView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
