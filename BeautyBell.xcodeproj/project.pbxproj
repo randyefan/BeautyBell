@@ -11,6 +11,7 @@
 		6189255B265FBC6300BFF444 /* DetailArtisanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189255A265FBC6300BFF444 /* DetailArtisanViewController.swift */; };
 		61905FF0265FCB9F000B276F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61905FEF265FCB9F000B276F /* NetworkService.swift */; };
 		61B788F2265FEECB0034A83C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B788F1265FEECB0034A83C /* Extension.swift */; };
+		61B78905265FF1B50034A83C /* ServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B78904265FF1B50034A83C /* ServiceViewModel.swift */; };
 		61C020B6265FD24600CDF696 /* Artisan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C020B5265FD24600CDF696 /* Artisan.swift */; };
 		61C021D5265FD68500CDF696 /* ArtisansListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C021D4265FD68500CDF696 /* ArtisansListViewModel.swift */; };
 		61C021EC265FDF5100CDF696 /* ArtisanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C021EB265FDF5100CDF696 /* ArtisanViewModel.swift */; };
@@ -55,6 +56,7 @@
 		6189255A265FBC6300BFF444 /* DetailArtisanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArtisanViewController.swift; sourceTree = "<group>"; };
 		61905FEF265FCB9F000B276F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		61B788F1265FEECB0034A83C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		61B78904265FF1B50034A83C /* ServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewModel.swift; sourceTree = "<group>"; };
 		61C020B5265FD24600CDF696 /* Artisan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artisan.swift; sourceTree = "<group>"; };
 		61C021D4265FD68500CDF696 /* ArtisansListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtisansListViewModel.swift; sourceTree = "<group>"; };
 		61C021EB265FDF5100CDF696 /* ArtisanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtisanViewModel.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			children = (
 				61C021EB265FDF5100CDF696 /* ArtisanViewModel.swift */,
 				61C021D4265FD68500CDF696 /* ArtisansListViewModel.swift */,
+				61B78904265FF1B50034A83C /* ServiceViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 				61C021D5265FD68500CDF696 /* ArtisansListViewModel.swift in Sources */,
 				DAA4C695265F96A80041BC49 /* ProfileViewController.swift in Sources */,
 				61C020B6265FD24600CDF696 /* Artisan.swift in Sources */,
+				61B78905265FF1B50034A83C /* ServiceViewModel.swift in Sources */,
 				DAA4C68C265F94F20041BC49 /* ServiceCollectionViewCell.swift in Sources */,
 				DAD0892F265F883800CA59CF /* LoginViewController.swift in Sources */,
 				61905FF0265FCB9F000B276F /* NetworkService.swift in Sources */,

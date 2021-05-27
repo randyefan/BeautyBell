@@ -34,7 +34,6 @@ class HomeViewController: UIViewController {
         tableView.tableFooterView = UIView()
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(UINib(nibName: "ArtisanTableViewCell", bundle: nil), forCellReuseIdentifier: "artisanCell")
-        tableView.allowsSelection = false
     }
     
     func setupActivityIndicator(isLoading: Bool) {
@@ -70,10 +69,17 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "artisanCell", for: indexPath) as? ArtisanTableViewCell {
             cell.viewModel = ArtisanViewModel(artisan: artisanList[indexPath.row])
+            cell.selectionStyle = .none
             return cell
         }
         
         fatalError()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let viewController = storyboard?.instantiateViewController(identifier: "detailArtisan") as? DetailArtisanViewController else { return }
+        viewController.viewModel = ArtisanViewModel(artisan: artisanList[indexPath.row])
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     
