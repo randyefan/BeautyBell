@@ -16,6 +16,7 @@ struct Artisan {
     var avatar: String
     var image: String
     var rating: Int
+    var description: String
     var services: [Service] = []
     
     init(_ json: JSON) {
@@ -24,6 +25,7 @@ struct Artisan {
         avatar = json["avatar"].stringValue
         image = json["image"].stringValue
         rating = json["rating"].intValue
+        description = json["description"].stringValue
         
         for obj in json["services"].arrayValue {
             self.services.append(Service(obj))
