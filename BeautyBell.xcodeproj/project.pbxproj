@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		25790A72844D2F00450C1A27 /* Pods_BeautyBellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8EE50DF5A0F24B1C541A50 /* Pods_BeautyBellTests.framework */; };
 		6189255B265FBC6300BFF444 /* DetailArtisanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189255A265FBC6300BFF444 /* DetailArtisanViewController.swift */; };
+		61905FF0265FCB9F000B276F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61905FEF265FCB9F000B276F /* NetworkService.swift */; };
+		61B788F2265FEECB0034A83C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B788F1265FEECB0034A83C /* Extension.swift */; };
+		61C020B6265FD24600CDF696 /* Artisan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C020B5265FD24600CDF696 /* Artisan.swift */; };
+		61C021D5265FD68500CDF696 /* ArtisansListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C021D4265FD68500CDF696 /* ArtisansListViewModel.swift */; };
+		61C021EC265FDF5100CDF696 /* ArtisanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C021EB265FDF5100CDF696 /* ArtisanViewModel.swift */; };
 		824802C0E5B979804F3C429C /* Pods_BeautyBell_BeautyBellUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2D3CFE98F34D790FBB0998 /* Pods_BeautyBell_BeautyBellUITests.framework */; };
 		AF476C389D1B47CAD61837D5 /* Pods_BeautyBell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581AA41AD6D35629793C3EF5 /* Pods_BeautyBell.framework */; };
 		DAA4C68C265F94F20041BC49 /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4C68A265F94F20041BC49 /* ServiceCollectionViewCell.swift */; };
@@ -48,6 +53,11 @@
 		0A8EE50DF5A0F24B1C541A50 /* Pods_BeautyBellTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeautyBellTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		581AA41AD6D35629793C3EF5 /* Pods_BeautyBell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeautyBell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6189255A265FBC6300BFF444 /* DetailArtisanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArtisanViewController.swift; sourceTree = "<group>"; };
+		61905FEF265FCB9F000B276F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		61B788F1265FEECB0034A83C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		61C020B5265FD24600CDF696 /* Artisan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artisan.swift; sourceTree = "<group>"; };
+		61C021D4265FD68500CDF696 /* ArtisansListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtisansListViewModel.swift; sourceTree = "<group>"; };
+		61C021EB265FDF5100CDF696 /* ArtisanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtisanViewModel.swift; sourceTree = "<group>"; };
 		6890C95454B435BA82D812DE /* Pods-BeautyBell-BeautyBellUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBell-BeautyBellUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeautyBell-BeautyBellUITests/Pods-BeautyBell-BeautyBellUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7949A45F3E1E69FE44EB908B /* Pods-BeautyBell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeautyBell/Pods-BeautyBell.debug.xcconfig"; sourceTree = "<group>"; };
 		7F7C60F87138122CEE47DDFD /* Pods-BeautyBell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBell.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeautyBell/Pods-BeautyBell.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,20 +138,54 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		DAA4C689265F94CC0041BC49 /* Collection Cell */ = {
+		61905FED265FCB85000B276F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				61905FEF265FCB9F000B276F /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		61B788F0265FEEC10034A83C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				61B788F1265FEECB0034A83C /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		61C020B4265FD22200CDF696 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				61C020B5265FD24600CDF696 /* Artisan.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		61C021F0265FE05200CDF696 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				61C021EB265FDF5100CDF696 /* ArtisanViewModel.swift */,
+				61C021D4265FD68500CDF696 /* ArtisansListViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		DAA4C689265F94CC0041BC49 /* Collection View Cell */ = {
 			isa = PBXGroup;
 			children = (
 				DAA4C68A265F94F20041BC49 /* ServiceCollectionViewCell.swift */,
 				DAA4C68B265F94F20041BC49 /* ServiceCollectionViewCell.xib */,
 			);
-			path = "Collection Cell";
+			path = "Collection View Cell";
 			sourceTree = "<group>";
 		};
 		DAC336F6265F923D003F6452 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DAA4C689265F94CC0041BC49 /* Collection Cell */,
-				DAC336FF265F926C003F6452 /* Table Cell */,
+				61C021F0265FE05200CDF696 /* View Model */,
+				DAA4C689265F94CC0041BC49 /* Collection View Cell */,
+				DAC336FF265F926C003F6452 /* Table View Cell */,
 				DAA4C699265F97560041BC49 /* HomeViewController.swift */,
 				6189255A265FBC6300BFF444 /* DetailArtisanViewController.swift */,
 			);
@@ -156,13 +200,13 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		DAC336FF265F926C003F6452 /* Table Cell */ = {
+		DAC336FF265F926C003F6452 /* Table View Cell */ = {
 			isa = PBXGroup;
 			children = (
 				DAC336F9265F9268003F6452 /* ArtisanTableViewCell.xib */,
 				DAC336F8265F9268003F6452 /* ArtisanTableViewCell.swift */,
 			);
-			path = "Table Cell";
+			path = "Table View Cell";
 			sourceTree = "<group>";
 		};
 		DAD0891E265F883800CA59CF = {
@@ -190,10 +234,12 @@
 		DAD08929265F883800CA59CF /* BeautyBell */ = {
 			isa = PBXGroup;
 			children = (
+				61B788F0265FEEC10034A83C /* Extension */,
 				DAD08960265F8FB100CA59CF /* Services */,
 				DAD0895F265F8F9800CA59CF /* Resources */,
 				DAD0895E265F8F8C00CA59CF /* Module */,
 				DAD0895D265F8F8000CA59CF /* App */,
+				61C020B4265FD22200CDF696 /* Model */,
 				DAD08938265F883900CA59CF /* Info.plist */,
 			);
 			path = BeautyBell;
@@ -229,8 +275,8 @@
 		DAD0895E265F8F8C00CA59CF /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				DAC336F7265F9241003F6452 /* Profile */,
 				DAC336F6265F923D003F6452 /* Home */,
+				DAC336F7265F9241003F6452 /* Profile */,
 				DAD08961265F900300CA59CF /* Login */,
 			);
 			path = Module;
@@ -249,6 +295,7 @@
 		DAD08960265F8FB100CA59CF /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				61905FED265FCB85000B276F /* Networking */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -512,10 +559,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6189255B265FBC6300BFF444 /* DetailArtisanViewController.swift in Sources */,
+				61C021D5265FD68500CDF696 /* ArtisansListViewModel.swift in Sources */,
 				DAA4C695265F96A80041BC49 /* ProfileViewController.swift in Sources */,
+				61C020B6265FD24600CDF696 /* Artisan.swift in Sources */,
 				DAA4C68C265F94F20041BC49 /* ServiceCollectionViewCell.swift in Sources */,
 				DAD0892F265F883800CA59CF /* LoginViewController.swift in Sources */,
+				61905FF0265FCB9F000B276F /* NetworkService.swift in Sources */,
+				61C021EC265FDF5100CDF696 /* ArtisanViewModel.swift in Sources */,
 				DAD0892B265F883800CA59CF /* AppDelegate.swift in Sources */,
+				61B788F2265FEECB0034A83C /* Extension.swift in Sources */,
 				DAC336FA265F9268003F6452 /* ArtisanTableViewCell.swift in Sources */,
 				DAA4C69A265F97560041BC49 /* HomeViewController.swift in Sources */,
 				DAD0892D265F883800CA59CF /* SceneDelegate.swift in Sources */,
