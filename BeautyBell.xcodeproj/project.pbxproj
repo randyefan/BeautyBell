@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25790A72844D2F00450C1A27 /* Pods_BeautyBellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8EE50DF5A0F24B1C541A50 /* Pods_BeautyBellTests.framework */; };
 		6189255B265FBC6300BFF444 /* DetailArtisanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189255A265FBC6300BFF444 /* DetailArtisanViewController.swift */; };
+		824802C0E5B979804F3C429C /* Pods_BeautyBell_BeautyBellUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2D3CFE98F34D790FBB0998 /* Pods_BeautyBell_BeautyBellUITests.framework */; };
+		AF476C389D1B47CAD61837D5 /* Pods_BeautyBell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581AA41AD6D35629793C3EF5 /* Pods_BeautyBell.framework */; };
 		DAA4C68C265F94F20041BC49 /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4C68A265F94F20041BC49 /* ServiceCollectionViewCell.swift */; };
 		DAA4C68D265F94F20041BC49 /* ServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA4C68B265F94F20041BC49 /* ServiceCollectionViewCell.xib */; };
 		DAA4C695265F96A80041BC49 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4C694265F96A80041BC49 /* ProfileViewController.swift */; };
@@ -42,7 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A8EE50DF5A0F24B1C541A50 /* Pods_BeautyBellTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeautyBellTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		581AA41AD6D35629793C3EF5 /* Pods_BeautyBell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeautyBell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6189255A265FBC6300BFF444 /* DetailArtisanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArtisanViewController.swift; sourceTree = "<group>"; };
+		6890C95454B435BA82D812DE /* Pods-BeautyBell-BeautyBellUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBell-BeautyBellUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeautyBell-BeautyBellUITests/Pods-BeautyBell-BeautyBellUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7949A45F3E1E69FE44EB908B /* Pods-BeautyBell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeautyBell/Pods-BeautyBell.debug.xcconfig"; sourceTree = "<group>"; };
+		7F7C60F87138122CEE47DDFD /* Pods-BeautyBell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBell.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeautyBell/Pods-BeautyBell.release.xcconfig"; sourceTree = "<group>"; };
+		8BFEF77C8169FC6AF7587FFB /* Pods-BeautyBell-BeautyBellUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBell-BeautyBellUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeautyBell-BeautyBellUITests/Pods-BeautyBell-BeautyBellUITests.release.xcconfig"; sourceTree = "<group>"; };
+		905711B29C077D4CFB3231BB /* Pods-BeautyBellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBellTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeautyBellTests/Pods-BeautyBellTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F2D3CFE98F34D790FBB0998 /* Pods_BeautyBell_BeautyBellUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeautyBell_BeautyBellUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB464314032B861FC55BA11A /* Pods-BeautyBellTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBellTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeautyBellTests/Pods-BeautyBellTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DAA4C68A265F94F20041BC49 /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
 		DAA4C68B265F94F20041BC49 /* ServiceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCollectionViewCell.xib; sourceTree = "<group>"; };
 		DAA4C694265F96A80041BC49 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF476C389D1B47CAD61837D5 /* Pods_BeautyBell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25790A72844D2F00450C1A27 /* Pods_BeautyBellTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +98,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				824802C0E5B979804F3C429C /* Pods_BeautyBell_BeautyBellUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28A7C352BD40EF523DE0B508 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				581AA41AD6D35629793C3EF5 /* Pods_BeautyBell.framework */,
+				9F2D3CFE98F34D790FBB0998 /* Pods_BeautyBell_BeautyBellUITests.framework */,
+				0A8EE50DF5A0F24B1C541A50 /* Pods_BeautyBellTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CF05282AF2BBC1CD6D9CB1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7949A45F3E1E69FE44EB908B /* Pods-BeautyBell.debug.xcconfig */,
+				7F7C60F87138122CEE47DDFD /* Pods-BeautyBell.release.xcconfig */,
+				6890C95454B435BA82D812DE /* Pods-BeautyBell-BeautyBellUITests.debug.xcconfig */,
+				8BFEF77C8169FC6AF7587FFB /* Pods-BeautyBell-BeautyBellUITests.release.xcconfig */,
+				AB464314032B861FC55BA11A /* Pods-BeautyBellTests.debug.xcconfig */,
+				905711B29C077D4CFB3231BB /* Pods-BeautyBellTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DAA4C689265F94CC0041BC49 /* Collection Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +172,8 @@
 				DAD08940265F883A00CA59CF /* BeautyBellTests */,
 				DAD0894B265F883A00CA59CF /* BeautyBellUITests */,
 				DAD08928265F883800CA59CF /* Products */,
+				3CF05282AF2BBC1CD6D9CB1F /* Pods */,
+				28A7C352BD40EF523DE0B508 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -228,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAD08951265F883A00CA59CF /* Build configuration list for PBXNativeTarget "BeautyBell" */;
 			buildPhases = (
+				C95E28119F32F7E79A671B84 /* [CP] Check Pods Manifest.lock */,
 				DAD08923265F883800CA59CF /* Sources */,
 				DAD08924265F883800CA59CF /* Frameworks */,
 				DAD08925265F883800CA59CF /* Resources */,
+				05C80CEC24C1724CDE8076EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,6 +287,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAD08954265F883A00CA59CF /* Build configuration list for PBXNativeTarget "BeautyBellTests" */;
 			buildPhases = (
+				8AD53887B6E7D35DF5340CA0 /* [CP] Check Pods Manifest.lock */,
 				DAD08939265F883A00CA59CF /* Sources */,
 				DAD0893A265F883A00CA59CF /* Frameworks */,
 				DAD0893B265F883A00CA59CF /* Resources */,
@@ -263,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAD08957265F883A00CA59CF /* Build configuration list for PBXNativeTarget "BeautyBellUITests" */;
 			buildPhases = (
+				6146AB936D991A5303BE549C /* [CP] Check Pods Manifest.lock */,
 				DAD08944265F883A00CA59CF /* Sources */,
 				DAD08945265F883A00CA59CF /* Frameworks */,
 				DAD08946265F883A00CA59CF /* Resources */,
+				3A443FC78312285C9C9CB642 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -347,6 +392,119 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05C80CEC24C1724CDE8076EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BeautyBell/Pods-BeautyBell-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeautyBell/Pods-BeautyBell-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A443FC78312285C9C9CB642 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BeautyBell-BeautyBellUITests/Pods-BeautyBell-BeautyBellUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeautyBell-BeautyBellUITests/Pods-BeautyBell-BeautyBellUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6146AB936D991A5303BE549C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeautyBell-BeautyBellUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AD53887B6E7D35DF5340CA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeautyBellTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C95E28119F32F7E79A671B84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeautyBell-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAD08923265F883800CA59CF /* Sources */ = {
@@ -533,6 +691,7 @@
 		};
 		DAD08952265F883A00CA59CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7949A45F3E1E69FE44EB908B /* Pods-BeautyBell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -551,6 +710,7 @@
 		};
 		DAD08953265F883A00CA59CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F7C60F87138122CEE47DDFD /* Pods-BeautyBell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -569,6 +729,7 @@
 		};
 		DAD08955265F883A00CA59CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB464314032B861FC55BA11A /* Pods-BeautyBellTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -590,6 +751,7 @@
 		};
 		DAD08956265F883A00CA59CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 905711B29C077D4CFB3231BB /* Pods-BeautyBellTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -611,6 +773,7 @@
 		};
 		DAD08958265F883A00CA59CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6890C95454B435BA82D812DE /* Pods-BeautyBell-BeautyBellUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -630,6 +793,7 @@
 		};
 		DAD08959265F883A00CA59CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BFEF77C8169FC6AF7587FFB /* Pods-BeautyBell-BeautyBellUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
