@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		25790A72844D2F00450C1A27 /* Pods_BeautyBellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8EE50DF5A0F24B1C541A50 /* Pods_BeautyBellTests.framework */; };
 		6161BD26266099B500946BA7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6161BD25266099B500946BA7 /* LoginViewModel.swift */; };
+		617D42402660BDB4002885B0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D423F2660BDB4002885B0 /* ProfileViewModel.swift */; };
 		6189255B265FBC6300BFF444 /* DetailArtisanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189255A265FBC6300BFF444 /* DetailArtisanViewController.swift */; };
 		61905FF0265FCB9F000B276F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61905FEF265FCB9F000B276F /* NetworkService.swift */; };
 		61B788F2265FEECB0034A83C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B788F1265FEECB0034A83C /* Extension.swift */; };
@@ -55,6 +56,7 @@
 		0A8EE50DF5A0F24B1C541A50 /* Pods_BeautyBellTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeautyBellTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		581AA41AD6D35629793C3EF5 /* Pods_BeautyBell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeautyBell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6161BD25266099B500946BA7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		617D423F2660BDB4002885B0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		6189255A265FBC6300BFF444 /* DetailArtisanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArtisanViewController.swift; sourceTree = "<group>"; };
 		61905FEF265FCB9F000B276F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		61B788F1265FEECB0034A83C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -150,6 +152,14 @@
 			path = "View Model";
 			sourceTree = "<group>";
 		};
+		617D423E2660BD9B002885B0 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				617D423F2660BDB4002885B0 /* ProfileViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
 		61905FED265FCB85000B276F /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +218,7 @@
 		DAC336F7265F9241003F6452 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				617D423E2660BD9B002885B0 /* View Model */,
 				DAA4C694265F96A80041BC49 /* ProfileViewController.swift */,
 			);
 			path = Profile;
@@ -594,6 +605,7 @@
 				61B788F2265FEECB0034A83C /* Extension.swift in Sources */,
 				DAC336FA265F9268003F6452 /* ArtisanTableViewCell.swift in Sources */,
 				DAA4C69A265F97560041BC49 /* HomeViewController.swift in Sources */,
+				617D42402660BDB4002885B0 /* ProfileViewModel.swift in Sources */,
 				DAD0892D265F883800CA59CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
