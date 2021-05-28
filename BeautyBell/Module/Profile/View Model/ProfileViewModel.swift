@@ -9,6 +9,7 @@ import Foundation
 import FBSDKLoginKit
 import RxSwift
 import RxCocoa
+import GoogleSignIn
 
 struct ProfileViewModel {
     var photo = BehaviorRelay<URL?>(value: nil)
@@ -21,6 +22,11 @@ struct ProfileViewModel {
             photo.accept(photoUrl)
             email.accept(emailString)
             name.accept(nameString)
+        }
+        
+        if let user = GIDSignIn.sharedInstance()?.currentUser {
+            name.accept(user.profile.name)
+            email.accept(user.profile.email)
         }
     }
 }

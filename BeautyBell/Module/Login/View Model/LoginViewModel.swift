@@ -9,9 +9,11 @@ import Foundation
 import RxSwift
 import RxCocoa
 import FBSDKLoginKit
+import GoogleSignIn
 
-class LoginViewModel {
+class LoginViewModel: NSObject {
     var isFacebookLogin = BehaviorRelay<Bool>(value: false)
+    var isGoogleLogin = BehaviorRelay<Bool>(value: false)
     
     func performFacebookLogin(rootVC: UIViewController) {
         let fbLoginManager = LoginManager()
@@ -34,5 +36,35 @@ class LoginViewModel {
             }
             
         }
+    }
+    
+    func performGoogleLogin(rootVC: UIViewController) {
+        GIDSignIn.sharedInstance()?.presentingViewController = rootVC
+        GIDSignIn.sharedInstance()?.signIn()
+        GIDSignIn.sharedInstance()?.delegate = self
+    }
+}
+
+extension LoginViewModel: GIDSignInDelegate {
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        // Check for sign in error
+        if let error = error {
+            if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+                print("The user has not signed in before or they have since signed out.")
+            } else {
+                print("\(error.localizedDescription)")
+            }
+            return
+        }
+        
+        // Post notification after user successfully sign in
+        NotificationCenter.default.post(name: .signInGoogleCompleted, object: nil)
+        self.isGoogleLogin.accept(true)
+    }
+}
+
+extension Notification.Name {
+    static var signInGoogleCompleted: Notification.Name {
+        return .init(rawValue: #function)
     }
 }

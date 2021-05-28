@@ -33,6 +33,12 @@ class LoginViewController: UIViewController {
                 self?.completeLogin()
             }
         }).disposed(by: disposeBag)
+        
+        viewModel.isGoogleLogin.subscribe(onNext: { [weak self] isLogin in
+            if isLogin {
+                self?.completeLogin()
+            }
+        }).disposed(by: disposeBag)
     }
     
     func completeLogin() {
@@ -49,5 +55,8 @@ class LoginViewController: UIViewController {
         viewModel.performFacebookLogin(rootVC: self)
     }
     
+    @IBAction func googleLoginPressed(_ sender: Any) {
+        viewModel.performGoogleLogin(rootVC: self)
+    }
 }
 

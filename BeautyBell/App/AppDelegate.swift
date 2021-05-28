@@ -7,6 +7,8 @@
 
 import UIKit
 import FBSDKCoreKit
+import FBSDKLoginKit
+import GoogleSignIn
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,22 +17,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
         
+        // Facebook
         ApplicationDelegate.shared.application(
             application,
             didFinishLaunchingWithOptions:
             launchOptions
         )
         
+        // Google
+        GIDSignIn.sharedInstance()?.clientID = "218517533524-pqtj19h1h5gkevlrop8i7ltl76fg6oja.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+        
+        return true
+        
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        if AccessToken.current != nil {
+            let loginManager = LoginManager()
+            loginManager.logOut()
+        }
+        
+        if let _ = GIDSignIn.sharedInstance()?.currentUser {
+            GIDSignIn.sharedInstance()?.signOut()
+        }
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        return ApplicationDelegate.shared.application(
+        ApplicationDelegate.shared.application(
             app,
             open: url,
             options: options
         )
+        
+        GIDSignIn.sharedInstance().handle(url)
+        
+        return true
     }
 
     // MARK: UISceneSession Lifecycle

@@ -75,6 +75,9 @@
                                     <constraint firstAttribute="height" constant="55" id="4gd-Tj-YX8"/>
                                 </constraints>
                                 <state key="normal" image="google"/>
+                                <connections>
+                                    <action selector="googleLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H3p-fz-Mgm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
