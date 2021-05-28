@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		25790A72844D2F00450C1A27 /* Pods_BeautyBellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8EE50DF5A0F24B1C541A50 /* Pods_BeautyBellTests.framework */; };
+		6161BD26266099B500946BA7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6161BD25266099B500946BA7 /* LoginViewModel.swift */; };
 		6189255B265FBC6300BFF444 /* DetailArtisanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189255A265FBC6300BFF444 /* DetailArtisanViewController.swift */; };
 		61905FF0265FCB9F000B276F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61905FEF265FCB9F000B276F /* NetworkService.swift */; };
 		61B788F2265FEECB0034A83C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B788F1265FEECB0034A83C /* Extension.swift */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		0A8EE50DF5A0F24B1C541A50 /* Pods_BeautyBellTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeautyBellTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		581AA41AD6D35629793C3EF5 /* Pods_BeautyBell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeautyBell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6161BD25266099B500946BA7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		6189255A265FBC6300BFF444 /* DetailArtisanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArtisanViewController.swift; sourceTree = "<group>"; };
 		61905FEF265FCB9F000B276F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		61B788F1265FEECB0034A83C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -138,6 +140,14 @@
 				905711B29C077D4CFB3231BB /* Pods-BeautyBellTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6161BD24266099A500946BA7 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				6161BD25266099B500946BA7 /* LoginViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 		61905FED265FCB85000B276F /* Networking */ = {
@@ -306,6 +316,7 @@
 		DAD08961265F900300CA59CF /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				6161BD24266099A500946BA7 /* View Model */,
 				DAD0892E265F883800CA59CF /* LoginViewController.swift */,
 			);
 			path = Login;
@@ -453,6 +464,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BeautyBell/Pods-BeautyBell-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -462,6 +475,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -481,6 +496,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BeautyBell-BeautyBellUITests/Pods-BeautyBell-BeautyBellUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -490,6 +507,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -569,6 +588,7 @@
 				DAA4C68C265F94F20041BC49 /* ServiceCollectionViewCell.swift in Sources */,
 				DAD0892F265F883800CA59CF /* LoginViewController.swift in Sources */,
 				61905FF0265FCB9F000B276F /* NetworkService.swift in Sources */,
+				6161BD26266099B500946BA7 /* LoginViewModel.swift in Sources */,
 				61C021EC265FDF5100CDF696 /* ArtisanViewModel.swift in Sources */,
 				DAD0892B265F883800CA59CF /* AppDelegate.swift in Sources */,
 				61B788F2265FEECB0034A83C /* Extension.swift in Sources */,

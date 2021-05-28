@@ -57,13 +57,22 @@
                                     <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mj3-mS-8Bq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKk-Jc-3p1">
+                                <rect key="frame" x="153" y="674" width="108" height="30"/>
+                                <state key="normal" title="Facebook Login"/>
+                                <connections>
+                                    <action selector="facebookLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jmi-eB-5xe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ktB-5i-Lzf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BOP-g4-wPG"/>
                             <constraint firstItem="ktB-5i-Lzf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ndl-Xd-wAY"/>
+                            <constraint firstItem="fKk-Jc-3p1" firstAttribute="top" secondItem="wRN-f8-gjx" secondAttribute="bottom" constant="51" id="Zlh-jq-MDQ"/>
                             <constraint firstItem="wRN-f8-gjx" firstAttribute="top" secondItem="ktB-5i-Lzf" secondAttribute="bottom" constant="45" id="nfo-CD-cMi"/>
+                            <constraint firstItem="fKk-Jc-3p1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="niT-TT-ccz"/>
                             <constraint firstItem="wRN-f8-gjx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t0N-hG-MML"/>
                         </constraints>
                     </view>

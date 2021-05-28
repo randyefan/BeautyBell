@@ -9,6 +9,7 @@ target 'BeautyBell' do
   pod 'RxSwift', '5.1.1'
   pod 'RxCocoa', '5.1.1'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'FBSDKLoginKit'
 
   # Pods for BeautyBell
 
