@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
             if isLogin {
                 self?.completeLogin()
             }
-        })
+        }).disposed(by: disposeBag)
     }
     
     func completeLogin() {
