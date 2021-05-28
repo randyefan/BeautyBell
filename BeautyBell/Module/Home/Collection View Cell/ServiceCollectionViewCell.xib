@@ -55,6 +55,7 @@
                                     <constraint firstItem="DL2-u3-Xi3" firstAttribute="leading" secondItem="4Ey-Rb-F0i" secondAttribute="leading" constant="4" id="9Cn-z0-H0W"/>
                                     <constraint firstAttribute="bottom" secondItem="DL2-u3-Xi3" secondAttribute="bottom" id="IhU-Rk-LUb"/>
                                     <constraint firstAttribute="trailing" secondItem="DL2-u3-Xi3" secondAttribute="trailing" constant="4" id="SsT-yg-g94"/>
+                                    <constraint firstAttribute="width" constant="257" id="Un1-mm-seP"/>
                                     <constraint firstItem="DL2-u3-Xi3" firstAttribute="top" secondItem="4Ey-Rb-F0i" secondAttribute="top" id="qya-a4-Ppp"/>
                                 </constraints>
                             </view>

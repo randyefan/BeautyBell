@@ -13,6 +13,7 @@ class DetailArtisanViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var starStackView: UIStackView!
     @IBOutlet weak var serviceCollectionView: UICollectionView!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     let totalStar = 5
     
@@ -28,6 +29,7 @@ class DetailArtisanViewController: UIViewController {
         artisanImageView.load(url: imageUrl)
         setupStar(rating: viewModel.rating)
         nameLabel.text = viewModel.name
+        descriptionLabel.text = viewModel.description
         
         title = "Detail"
         

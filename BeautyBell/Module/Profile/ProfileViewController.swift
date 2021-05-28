@@ -32,6 +32,7 @@ class ProfileViewController: UIViewController {
     func registerObserver() {
         viewModel.photo.subscribe(onNext: { [weak self] photoUrl in
             guard let photoUrl = photoUrl else { return }
+            self?.imageProfile.makeRounded()
             self?.imageProfile.load(url: photoUrl)
         }).disposed(by: disposeBag)
         
