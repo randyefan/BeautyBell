@@ -44,4 +44,16 @@ struct ArtisansListViewModel {
             self.isLoading.accept(false)
         })
     }
+    
+    func artisanBySearch(query: String) {
+        self.isLoading.accept(true)
+        
+        let artisanListValue = self.artisanList.value
+        let artisanListFilter = artisanListValue.filter { (artisan) -> Bool in
+            artisan.name == query || artisan.description == query || String(artisan.rating) == query 
+        }
+        
+        self.artisanListFilter.accept(artisanListFilter)
+        self.isLoading.accept(false)
+    }
 }

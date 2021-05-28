@@ -57,6 +57,25 @@ class HomeViewController: UIViewController {
         viewModel.isLoading.subscribe(onNext: { [weak self] isLoading in
             self?.setupActivityIndicator(isLoading: isLoading)
         }).disposed(by: disposeBag)
+        
+        searchTextField.rx.text
+            .orEmpty
+            .distinctUntilChanged()
+            .subscribe(onNext: { [weak self] query in
+                if !query.isEmpty {
+                    self?.viewModel.artisanBySearch(query: query)
+                } else {
+                    self?.artisanList = self?.viewModel.artisanList.value ?? []
+                    self?.tableView.reloadData()
+                }
+            })
+        
+        viewModel.artisanListFilter.subscribe(onNext: { [weak self] artisan in
+            if !artisan.isEmpty {
+                self?.artisanList = artisan
+                self?.tableView.reloadData()
+            }
+        })
     }
 }
 
