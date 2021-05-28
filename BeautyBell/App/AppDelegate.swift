@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
-    func applicationDidEnterBackground(_ application: UIApplication) {
+    func applicationWillTerminate(_ application: UIApplication) {
         if AccessToken.current != nil {
             let loginManager = LoginManager()
             loginManager.logOut()
