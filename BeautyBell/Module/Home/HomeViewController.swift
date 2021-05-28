@@ -68,14 +68,14 @@ class HomeViewController: UIViewController {
                     self?.artisanList = self?.viewModel.artisanList.value ?? []
                     self?.tableView.reloadData()
                 }
-            })
+            }).disposed(by: disposeBag)
         
         viewModel.artisanListFilter.subscribe(onNext: { [weak self] artisan in
             if !artisan.isEmpty {
                 self?.artisanList = artisan
                 self?.tableView.reloadData()
             }
-        })
+        }).disposed(by: disposeBag)
     }
 }
 
