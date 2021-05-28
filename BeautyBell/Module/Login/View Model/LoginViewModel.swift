@@ -15,7 +15,7 @@ class LoginViewModel {
     
     func performFacebookLogin(rootVC: UIViewController) {
         let fbLoginManager = LoginManager()
-        fbLoginManager.logIn(permissions: ["email", "user_birthday"], from: rootVC) { [weak self] (result, err) in
+        fbLoginManager.logIn(permissions: ["email"], from: rootVC) { [weak self] (result, err) in
             if let err = err {
                 print(err.localizedDescription)
                 return
